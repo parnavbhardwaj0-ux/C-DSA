@@ -1,7 +1,7 @@
 # include <iostream>
 using namespace std;
 class node{
-    public:
+public:
     int data;
     node* next;
     node(int val) {
@@ -28,7 +28,7 @@ int main(){
     first-> next = second;
     second-> next = third;
     third-> next = fourth;
-    fourth-> next = first;
+    head= first;
 
     while(head != nullptr){
         cout << head-> data << " ";
